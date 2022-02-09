@@ -1,5 +1,5 @@
 //
-//  SearchSeriesViewController.swift
+//  ShowDetailViewController.swift
 //  TVMazeApp
 //
 //  Created by Digao on 08/02/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchSeriesViewController: UIViewController {
+class ShowDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -19,20 +19,23 @@
 		FA8394BD27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394BC27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift */; };
 		FA8394CC27AF076E0094CF29 /* ShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394CB27AF076E0094CF29 /* ShowModel.swift */; };
 		FA8394CF27AF0B950094CF29 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394CE27AF0B950094CF29 /* BaseService.swift */; };
-		FAA176E827B31FC100F67974 /* SeriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176E627B31FC100F67974 /* SeriesListViewController.swift */; };
-		FAA176E927B31FC100F67974 /* SeriesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176E727B31FC100F67974 /* SeriesListViewController.xib */; };
-		FAA176ED27B3204F00F67974 /* SearchSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176EB27B3204F00F67974 /* SearchSeriesViewController.swift */; };
-		FAA176EE27B3204F00F67974 /* SearchSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176EC27B3204F00F67974 /* SearchSeriesViewController.xib */; };
-		FAA176F227B3207C00F67974 /* SerieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F027B3207C00F67974 /* SerieDetailViewController.swift */; };
+		FAA176E827B31FC100F67974 /* ShowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176E627B31FC100F67974 /* ShowListViewController.swift */; };
+		FAA176E927B31FC100F67974 /* ShowListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176E727B31FC100F67974 /* ShowListViewController.xib */; };
+		FAA176ED27B3204F00F67974 /* SearchShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176EB27B3204F00F67974 /* SearchShowViewController.swift */; };
+		FAA176EE27B3204F00F67974 /* SearchShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176EC27B3204F00F67974 /* SearchShowViewController.xib */; };
+		FAA176F227B3207C00F67974 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */; };
 		FAA176F327B3207C00F67974 /* SerieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */; };
 		FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */; };
 		FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */; };
 		FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176FA27B32B6600F67974 /* RequestModel.swift */; };
-		FAA1770427B4274A00F67974 /* SerieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */; };
-		FAA1770527B4274A00F67974 /* SerieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */; };
-		FAA1770727B427A200F67974 /* SeriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770627B427A200F67974 /* SeriesListViewModel.swift */; };
+		FAA1770427B4274A00F67974 /* ShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770227B4274A00F67974 /* ShowCollectionViewCell.swift */; };
+		FAA1770527B4274A00F67974 /* ShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA1770327B4274A00F67974 /* ShowCollectionViewCell.xib */; };
+		FAA1770727B427A200F67974 /* ShowListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770627B427A200F67974 /* ShowListViewModel.swift */; };
 		FAA1770A27B429CC00F67974 /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */; };
-		FAA1771027B43EA400F67974 /* SeriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770F27B43EA400F67974 /* SeriesService.swift */; };
+		FAA1771027B43EA400F67974 /* ShowsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770F27B43EA400F67974 /* ShowsService.swift */; };
+		FAA1771327B4778100F67974 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1771227B4778100F67974 /* UIViewControllerExtension.swift */; };
+		FAA1771527B478A500F67974 /* SearchShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1771427B478A500F67974 /* SearchShowViewModel.swift */; };
+		FAA1771727B47CB600F67974 /* SearchShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1771627B47CB600F67974 /* SearchShowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,20 +78,23 @@
 		FA8394BC27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA8394CB27AF076E0094CF29 /* ShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModel.swift; sourceTree = "<group>"; };
 		FA8394CE27AF0B950094CF29 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		FAA176E627B31FC100F67974 /* SeriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListViewController.swift; sourceTree = "<group>"; };
-		FAA176E727B31FC100F67974 /* SeriesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesListViewController.xib; sourceTree = "<group>"; };
-		FAA176EB27B3204F00F67974 /* SearchSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSeriesViewController.swift; sourceTree = "<group>"; };
-		FAA176EC27B3204F00F67974 /* SearchSeriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSeriesViewController.xib; sourceTree = "<group>"; };
-		FAA176F027B3207C00F67974 /* SerieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieDetailViewController.swift; sourceTree = "<group>"; };
+		FAA176E627B31FC100F67974 /* ShowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListViewController.swift; sourceTree = "<group>"; };
+		FAA176E727B31FC100F67974 /* ShowListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowListViewController.xib; sourceTree = "<group>"; };
+		FAA176EB27B3204F00F67974 /* SearchShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowViewController.swift; sourceTree = "<group>"; };
+		FAA176EC27B3204F00F67974 /* SearchShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchShowViewController.xib; sourceTree = "<group>"; };
+		FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 		FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerieDetailViewController.xib; sourceTree = "<group>"; };
 		FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		FAA176FA27B32B6600F67974 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
-		FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCollectionViewCell.swift; sourceTree = "<group>"; };
-		FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerieCollectionViewCell.xib; sourceTree = "<group>"; };
-		FAA1770627B427A200F67974 /* SeriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListViewModel.swift; sourceTree = "<group>"; };
+		FAA1770227B4274A00F67974 /* ShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAA1770327B4274A00F67974 /* ShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAA1770627B427A200F67974 /* ShowListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListViewModel.swift; sourceTree = "<group>"; };
 		FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
-		FAA1770F27B43EA400F67974 /* SeriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesService.swift; sourceTree = "<group>"; };
+		FAA1770F27B43EA400F67974 /* ShowsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsService.swift; sourceTree = "<group>"; };
+		FAA1771227B4778100F67974 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FAA1771427B478A500F67974 /* SearchShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowViewModel.swift; sourceTree = "<group>"; };
+		FAA1771627B47CB600F67974 /* SearchShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				FA8394CB27AF076E0094CF29 /* ShowModel.swift */,
+				FAA1771627B47CB600F67974 /* SearchShowModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,7 +229,7 @@
 			children = (
 				FA8394CE27AF0B950094CF29 /* BaseService.swift */,
 				FAA176FA27B32B6600F67974 /* RequestModel.swift */,
-				FAA1770F27B43EA400F67974 /* SeriesService.swift */,
+				FAA1770F27B43EA400F67974 /* ShowsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -230,9 +237,9 @@
 		FAA176E527B31FA100F67974 /* SeriesList */ = {
 			isa = PBXGroup;
 			children = (
-				FAA176E627B31FC100F67974 /* SeriesListViewController.swift */,
-				FAA1770627B427A200F67974 /* SeriesListViewModel.swift */,
-				FAA176E727B31FC100F67974 /* SeriesListViewController.xib */,
+				FAA176E627B31FC100F67974 /* ShowListViewController.swift */,
+				FAA1770627B427A200F67974 /* ShowListViewModel.swift */,
+				FAA176E727B31FC100F67974 /* ShowListViewController.xib */,
 			);
 			path = SeriesList;
 			sourceTree = "<group>";
@@ -240,8 +247,9 @@
 		FAA176EA27B3203900F67974 /* SearchSeries */ = {
 			isa = PBXGroup;
 			children = (
-				FAA176EB27B3204F00F67974 /* SearchSeriesViewController.swift */,
-				FAA176EC27B3204F00F67974 /* SearchSeriesViewController.xib */,
+				FAA176EB27B3204F00F67974 /* SearchShowViewController.swift */,
+				FAA1771427B478A500F67974 /* SearchShowViewModel.swift */,
+				FAA176EC27B3204F00F67974 /* SearchShowViewController.xib */,
 			);
 			path = SearchSeries;
 			sourceTree = "<group>";
@@ -249,7 +257,7 @@
 		FAA176EF27B3206900F67974 /* SerieDetail */ = {
 			isa = PBXGroup;
 			children = (
-				FAA176F027B3207C00F67974 /* SerieDetailViewController.swift */,
+				FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */,
 				FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */,
 			);
 			path = SerieDetail;
@@ -285,8 +293,8 @@
 		FAA176FD27B4250500F67974 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */,
-				FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */,
+				FAA1770227B4274A00F67974 /* ShowCollectionViewCell.swift */,
+				FAA1770327B4274A00F67974 /* ShowCollectionViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -309,8 +317,17 @@
 		FAA1770C27B42B0100F67974 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1771127B4776B00F67974 /* Extensions */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAA1771127B4776B00F67974 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1771227B4778100F67974 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +441,11 @@
 			files = (
 				FA8394A627AEDB400094CF29 /* LaunchScreen.storyboard in Resources */,
 				FA8394A327AEDB400094CF29 /* Assets.xcassets in Resources */,
-				FAA1770527B4274A00F67974 /* SerieCollectionViewCell.xib in Resources */,
-				FAA176EE27B3204F00F67974 /* SearchSeriesViewController.xib in Resources */,
+				FAA1770527B4274A00F67974 /* ShowCollectionViewCell.xib in Resources */,
+				FAA176EE27B3204F00F67974 /* SearchShowViewController.xib in Resources */,
 				FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */,
 				FAA176F327B3207C00F67974 /* SerieDetailViewController.xib in Resources */,
-				FAA176E927B31FC100F67974 /* SeriesListViewController.xib in Resources */,
+				FAA176E927B31FC100F67974 /* ShowListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,18 +574,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8394CC27AF076E0094CF29 /* ShowModel.swift in Sources */,
-				FAA1771027B43EA400F67974 /* SeriesService.swift in Sources */,
+				FAA1771027B43EA400F67974 /* ShowsService.swift in Sources */,
 				FA83949A27AEDB3E0094CF29 /* AppDelegate.swift in Sources */,
-				FAA176ED27B3204F00F67974 /* SearchSeriesViewController.swift in Sources */,
+				FAA176ED27B3204F00F67974 /* SearchShowViewController.swift in Sources */,
+				FAA1771527B478A500F67974 /* SearchShowViewModel.swift in Sources */,
 				FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */,
 				FAA1770A27B429CC00F67974 /* NavigationBarViewController.swift in Sources */,
 				FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */,
-				FAA176F227B3207C00F67974 /* SerieDetailViewController.swift in Sources */,
+				FAA1771727B47CB600F67974 /* SearchShowModel.swift in Sources */,
+				FAA176F227B3207C00F67974 /* ShowDetailViewController.swift in Sources */,
 				FA8394CF27AF0B950094CF29 /* BaseService.swift in Sources */,
-				FAA1770727B427A200F67974 /* SeriesListViewModel.swift in Sources */,
+				FAA1770727B427A200F67974 /* ShowListViewModel.swift in Sources */,
 				FA83949C27AEDB3E0094CF29 /* SceneDelegate.swift in Sources */,
-				FAA176E827B31FC100F67974 /* SeriesListViewController.swift in Sources */,
-				FAA1770427B4274A00F67974 /* SerieCollectionViewCell.swift in Sources */,
+				FAA176E827B31FC100F67974 /* ShowListViewController.swift in Sources */,
+				FAA1771327B4778100F67974 /* UIViewControllerExtension.swift in Sources */,
+				FAA1770427B4274A00F67974 /* ShowCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

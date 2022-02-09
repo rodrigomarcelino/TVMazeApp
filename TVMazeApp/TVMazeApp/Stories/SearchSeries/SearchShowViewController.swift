@@ -1,5 +1,5 @@
 //
-//  SeriesListViewController.swift
+//  SearchShowViewController.swift
 //  TVMazeApp
 //
 //  Created by Digao on 08/02/22.
@@ -8,16 +8,16 @@
 import UIKit
 import RxSwift
 
-class SeriesListViewController: UIViewController {
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    private var viewModel: SeriesListViewModel!
-    private let bag = DisposeBag()
+class SearchShowViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var collectionView: UICollectionView!
+    private var viewModel: SearchShowViewModel!
+    private let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
-        viewModel.getSeries()
         configCollectionView()
     }
     
@@ -25,7 +25,7 @@ class SeriesListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.layer.masksToBounds = false
-        collectionView.register(UINib(nibName: "SerieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: SerieCollectionViewCell.identifier)
+        collectionView.register(UINib(nibName: "ShowCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ShowCollectionViewCell.identifier)
     }
     
     func bind() {
@@ -44,28 +44,47 @@ class SeriesListViewController: UIViewController {
 
 }
 
-extension SeriesListViewController {
-    static func newInstance(viewModel: SeriesListViewModel) -> SeriesListViewController {
-        let controller = SeriesListViewController(nibName: "SeriesListViewController", bundle: nil)
+extension SearchShowViewController {
+    static func newInstance(viewModel: SearchShowViewModel) -> SearchShowViewController {
+        let controller = SearchShowViewController(nibName: "SearchShowViewController", bundle: nil)
         controller.viewModel = viewModel
         return controller
     }
 }
 
-extension SeriesListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-        return viewModel.seriesList?.count ?? 0
-    }
 
+//MARK:- Search View Methods
+extension SearchShowViewController: UISearchBarDelegate{
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.searchQuery = searchBar.text ?? ""
+        self.dismissKeyboard()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
+            if searchText.isEmpty {
+                self.viewModel.searchQuery = searchText
+            }
+        }
+    }
+}
+
+//MARK:- Collection view methods
+extension SearchShowViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.searchShowList?.count ?? 0
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let serie = viewModel.seriesList?[indexPath.row], let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SerieCollectionViewCell.identifier, for: indexPath) as? SerieCollectionViewCell else {
+        guard let show = viewModel.searchShowList?[indexPath.row].show, let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ShowCollectionViewCell.identifier, for: indexPath) as? ShowCollectionViewCell else {
             return UICollectionViewCell()
         }
 
-        cell.setUp(name: serie.name, imageModel: serie.image)
+        cell.setUp(name: show.name, imageModel: show.image)
         return cell
     }
-
+    
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.size.width/3)-10, height: 150)
     }
@@ -77,8 +96,12 @@ extension SeriesListViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumLineSpacingForSectionAt _: Int) -> CGFloat {
         return 15
     }
-
+    
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumInteritemSpacingForSectionAt _: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
 }

@@ -1,5 +1,5 @@
 //
-//  SerieCollectionViewCell.swift
+//  ShowCollectionViewCell.swift
 //  TVMazeApp
 //
 //  Created by Digao on 09/02/22.
@@ -8,10 +8,10 @@
 import UIKit
 import Kingfisher
 
-class SerieCollectionViewCell: UICollectionViewCell {
+class ShowCollectionViewCell: UICollectionViewCell {
     
     //MARK:- Constants
-    static let identifier = "serieCollectionViewCell"
+    static let identifier = "showCollectionViewCell"
     
     //MARK:- View variables
     @IBOutlet weak var posterImageView: UIImageView!

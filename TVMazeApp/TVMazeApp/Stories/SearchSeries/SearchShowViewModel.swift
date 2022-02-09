@@ -1,5 +1,5 @@
 //
-//  SeriesListViewModel.swift
+//  SearchShowViewModel.swift
 //  TVMazeApp
 //
 //  Created by Digao on 09/02/22.
@@ -9,26 +9,28 @@ import Foundation
 import RxCocoa
 import Promise
 
-class SeriesListViewModel: NSObject {
+class SearchShowViewModel: NSObject {
     var viewState = ViewState()
     
-    var seriesList: [ShowModel]? = []
+    var searchShowList: [SearchShowModel]? = []
     
-    let seriesService: SeriesService!
+    var searchQuery: String = "" {
+        didSet{
+            getShows(searchText: searchQuery)
+        }
+    }
+    
+    let showsService = ShowsService()
 
     struct ViewState {
         let loading = BehaviorRelay<Bool>(value: false)
         let seviceSuccess = BehaviorRelay<Void>.init(value: ())
     }
     
-    init(seriesService: SeriesService? = SeriesService()) {
-        self.seriesService = seriesService
-    }
-    
-    func getSeries() {
+    func getShows(searchText: String?) {
         viewState.loading.accept(true)
-        seriesService.getSeriesPerPage(page: 0).then { [self] result in
-            self.seriesList?.append(contentsOf: result)
+        showsService.searchShows(searchText: searchText ?? "").then { [self] result in
+            self.searchShowList?.append(contentsOf: result)
             self.viewState.seviceSuccess.accept(())
         }.catch { _ in
             self.viewState.loading.accept(false)
@@ -37,3 +39,4 @@ class SeriesListViewModel: NSObject {
     }
     
 }
+
