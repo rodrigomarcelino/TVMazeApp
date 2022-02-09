@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def alamofire
+  pod 'Alamofire'
+end
+
+def kingfisher_pod
+  pod 'Kingfisher'
+end
+
+def rx
+  pod 'RxSwift'
+  pod 'RxCocoa'
+end
+
+def promises
+  pod 'Promises'
+end
+
+def shared_pods
+  alamofire
+  rx
+  kingfisher_pod
+  promises
+end
+
+target 'TVMazeApp' do
+  use_frameworks!
+  shared_pods
+
+  target 'TVMazeAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TVMazeAppUITests' do
+    # Pods for testing
+  end
+
+end
