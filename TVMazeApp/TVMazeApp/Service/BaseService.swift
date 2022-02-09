@@ -19,11 +19,11 @@ public class BaseService {
         return alamoFireManager
     }()
 
-    public static func requestAnyResponse<T: Codable>(request: RequestModel, object: T.Type) -> Promise<T> {
+    public static func request<T: Codable>(request: RequestModel, object: T.Type) -> Promise<T> {
         return Promise { fulfill, reject in
 
 
-        alamoFireManager?.request(request.url, method: httpMethod(request.method), parameters: request.params).responseJSON { response in
+        alamoFireManager?.request(request.url, method: httpMethod(request.method), parameters: request.params).responseData { response in
             URLCache.shared.removeAllCachedResponses()
             
             guard let data = response.data else {

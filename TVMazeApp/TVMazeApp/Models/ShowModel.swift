@@ -22,15 +22,13 @@ struct ShowModel: Codable {
     var officialSite: String?
     var schedule: ScheduleModel?
     var rating: RatingModel?
-    var weight: String?
+    var weight: Int
     var network: NetworkModel?
-    var webChannel: String?
-    var dvdCountry: String?
     var externals: ExternalsModel?
     var image: ImageModel?
     var summary: String?
-    var updated: Int16?
-    var _links: String?
+    var updated: Int32?
+//    var _links: String?
 }
 
 struct ScheduleModel: Codable {
@@ -43,7 +41,7 @@ struct RatingModel: Codable {
 }
 
 struct NetworkModel: Codable {
-    var id: String?
+    var id: Int?
     var name: String?
     var country: CountryModel?
 }
@@ -55,8 +53,8 @@ struct CountryModel: Codable {
 }
 
 struct ExternalsModel: Codable {
-    var tvrage: Int8?
-    var thetvdb: Int8?
+    var tvrage: Int32?
+    var thetvdb: Int32?
     var imdb: String?
 }
 

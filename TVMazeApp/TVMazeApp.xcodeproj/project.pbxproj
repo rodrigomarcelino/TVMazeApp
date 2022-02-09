@@ -28,6 +28,11 @@
 		FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */; };
 		FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */; };
 		FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176FA27B32B6600F67974 /* RequestModel.swift */; };
+		FAA1770427B4274A00F67974 /* SerieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */; };
+		FAA1770527B4274A00F67974 /* SerieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */; };
+		FAA1770727B427A200F67974 /* SeriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770627B427A200F67974 /* SeriesListViewModel.swift */; };
+		FAA1770A27B429CC00F67974 /* NavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */; };
+		FAA1771027B43EA400F67974 /* SeriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1770F27B43EA400F67974 /* SeriesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		FAA176FA27B32B6600F67974 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerieCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAA1770627B427A200F67974 /* SeriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListViewModel.swift; sourceTree = "<group>"; };
+		FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewController.swift; sourceTree = "<group>"; };
+		FAA1770F27B43EA400F67974 /* SeriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +167,8 @@
 		FA83949827AEDB3E0094CF29 /* TVMazeApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1770C27B42B0100F67974 /* Utils */,
+				FAA1770B27B42AFB00F67974 /* Helpers */,
 				FAA176FC27B32C2800F67974 /* App */,
 				FA8394CD27AF0B7C0094CF29 /* Service */,
 				FA8394CA27AF05F40094CF29 /* Models */,
@@ -187,6 +199,7 @@
 		FA8394C927AF05EB0094CF29 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1770827B429BC00F67974 /* Navigation */,
 				FAA176E527B31FA100F67974 /* SeriesList */,
 				FAA176EF27B3206900F67974 /* SerieDetail */,
 				FAA176EA27B3203900F67974 /* SearchSeries */,
@@ -209,6 +222,7 @@
 			children = (
 				FA8394CE27AF0B950094CF29 /* BaseService.swift */,
 				FAA176FA27B32B6600F67974 /* RequestModel.swift */,
+				FAA1770F27B43EA400F67974 /* SeriesService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA176E627B31FC100F67974 /* SeriesListViewController.swift */,
+				FAA1770627B427A200F67974 /* SeriesListViewModel.swift */,
 				FAA176E727B31FC100F67974 /* SeriesListViewController.xib */,
 			);
 			path = SeriesList;
@@ -252,6 +267,7 @@
 		FAA176F927B3212B00F67974 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FAA176FD27B4250500F67974 /* Xibs */,
 				FA8394A227AEDB400094CF29 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -264,6 +280,37 @@
 				FA83949B27AEDB3E0094CF29 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		FAA176FD27B4250500F67974 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1770227B4274A00F67974 /* SerieCollectionViewCell.swift */,
+				FAA1770327B4274A00F67974 /* SerieCollectionViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		FAA1770827B429BC00F67974 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FAA1770B27B42AFB00F67974 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAA1770C27B42B0100F67974 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +424,7 @@
 			files = (
 				FA8394A627AEDB400094CF29 /* LaunchScreen.storyboard in Resources */,
 				FA8394A327AEDB400094CF29 /* Assets.xcassets in Resources */,
+				FAA1770527B4274A00F67974 /* SerieCollectionViewCell.xib in Resources */,
 				FAA176EE27B3204F00F67974 /* SearchSeriesViewController.xib in Resources */,
 				FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */,
 				FAA176F327B3207C00F67974 /* SerieDetailViewController.xib in Resources */,
@@ -509,14 +557,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8394CC27AF076E0094CF29 /* ShowModel.swift in Sources */,
+				FAA1771027B43EA400F67974 /* SeriesService.swift in Sources */,
 				FA83949A27AEDB3E0094CF29 /* AppDelegate.swift in Sources */,
 				FAA176ED27B3204F00F67974 /* SearchSeriesViewController.swift in Sources */,
 				FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */,
+				FAA1770A27B429CC00F67974 /* NavigationBarViewController.swift in Sources */,
 				FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */,
 				FAA176F227B3207C00F67974 /* SerieDetailViewController.swift in Sources */,
 				FA8394CF27AF0B950094CF29 /* BaseService.swift in Sources */,
+				FAA1770727B427A200F67974 /* SeriesListViewModel.swift in Sources */,
 				FA83949C27AEDB3E0094CF29 /* SceneDelegate.swift in Sources */,
 				FAA176E827B31FC100F67974 /* SeriesListViewController.swift in Sources */,
+				FAA1770427B4274A00F67974 /* SerieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,7 +745,6 @@
 				INFOPLIST_FILE = TVMazeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -722,7 +773,6 @@
 				INFOPLIST_FILE = TVMazeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
