@@ -19,12 +19,23 @@
 		FA8394BD27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394BC27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift */; };
 		FA8394CC27AF076E0094CF29 /* ShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394CB27AF076E0094CF29 /* ShowModel.swift */; };
 		FA8394CF27AF0B950094CF29 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8394CE27AF0B950094CF29 /* BaseService.swift */; };
+		FA850CA627B691E4006729EF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850CA527B691E4006729EF /* StringExtension.swift */; };
+		FA850CA827B691FF006729EF /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850CA727B691FF006729EF /* DataExtension.swift */; };
+		FA850CAF27B69C9F006729EF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA850CAE27B69C9F006729EF /* Colors.xcassets */; };
+		FA850CB127B6AB02006729EF /* EpisodeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850CB027B6AB02006729EF /* EpisodeDetailViewModel.swift */; };
+		FA850CB327B6DCBF006729EF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850CB227B6DCBF006729EF /* NavigationViewController.swift */; };
+		FA978E0327B55CB3003F7B4A /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA978E0227B55CB3003F7B4A /* EpisodeModel.swift */; };
+		FA978E0527B56302003F7B4A /* ShowDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA978E0427B56302003F7B4A /* ShowDetailViewModel.swift */; };
+		FA978E0B27B5B383003F7B4A /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA978E0927B5B383003F7B4A /* GenreCollectionViewCell.swift */; };
+		FA978E0C27B5B383003F7B4A /* GenreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA978E0A27B5B383003F7B4A /* GenreCollectionViewCell.xib */; };
+		FA978E0F27B5B39B003F7B4A /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA978E0D27B5B39B003F7B4A /* EpisodeTableViewCell.swift */; };
+		FA978E1027B5B39B003F7B4A /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA978E0E27B5B39B003F7B4A /* EpisodeTableViewCell.xib */; };
 		FAA176E827B31FC100F67974 /* ShowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176E627B31FC100F67974 /* ShowListViewController.swift */; };
 		FAA176E927B31FC100F67974 /* ShowListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176E727B31FC100F67974 /* ShowListViewController.xib */; };
 		FAA176ED27B3204F00F67974 /* SearchShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176EB27B3204F00F67974 /* SearchShowViewController.swift */; };
 		FAA176EE27B3204F00F67974 /* SearchShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176EC27B3204F00F67974 /* SearchShowViewController.xib */; };
 		FAA176F227B3207C00F67974 /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */; };
-		FAA176F327B3207C00F67974 /* SerieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */; };
+		FAA176F327B3207C00F67974 /* ShowDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F127B3207C00F67974 /* ShowDetailViewController.xib */; };
 		FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */; };
 		FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */; };
 		FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA176FA27B32B6600F67974 /* RequestModel.swift */; };
@@ -78,12 +89,23 @@
 		FA8394BC27AEDB400094CF29 /* TVMazeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA8394CB27AF076E0094CF29 /* ShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModel.swift; sourceTree = "<group>"; };
 		FA8394CE27AF0B950094CF29 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		FA850CA527B691E4006729EF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FA850CA727B691FF006729EF /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		FA850CAE27B69C9F006729EF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FA850CB027B6AB02006729EF /* EpisodeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewModel.swift; sourceTree = "<group>"; };
+		FA850CB227B6DCBF006729EF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		FA978E0227B55CB3003F7B4A /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		FA978E0427B56302003F7B4A /* ShowDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewModel.swift; sourceTree = "<group>"; };
+		FA978E0927B5B383003F7B4A /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA978E0A27B5B383003F7B4A /* GenreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA978E0D27B5B39B003F7B4A /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		FA978E0E27B5B39B003F7B4A /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		FAA176E627B31FC100F67974 /* ShowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListViewController.swift; sourceTree = "<group>"; };
 		FAA176E727B31FC100F67974 /* ShowListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowListViewController.xib; sourceTree = "<group>"; };
 		FAA176EB27B3204F00F67974 /* SearchShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowViewController.swift; sourceTree = "<group>"; };
 		FAA176EC27B3204F00F67974 /* SearchShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchShowViewController.xib; sourceTree = "<group>"; };
 		FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
-		FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerieDetailViewController.xib; sourceTree = "<group>"; };
+		FAA176F127B3207C00F67974 /* ShowDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailViewController.xib; sourceTree = "<group>"; };
 		FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		FAA176FA27B32B6600F67974 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
@@ -174,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				FAA1770C27B42B0100F67974 /* Utils */,
-				FAA1770B27B42AFB00F67974 /* Helpers */,
 				FAA176FC27B32C2800F67974 /* App */,
 				FA8394CD27AF0B7C0094CF29 /* Service */,
 				FA8394CA27AF05F40094CF29 /* Models */,
@@ -206,8 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA1770827B429BC00F67974 /* Navigation */,
-				FAA176E527B31FA100F67974 /* SeriesList */,
-				FAA176EF27B3206900F67974 /* SerieDetail */,
+				FAA176E527B31FA100F67974 /* ShowList */,
+				FAA176EF27B3206900F67974 /* ShowDetail */,
 				FAA176EA27B3203900F67974 /* SearchSeries */,
 				FAA176F427B3209A00F67974 /* EpisodeDetail */,
 				FAA176F927B3212B00F67974 /* Assets */,
@@ -220,6 +241,7 @@
 			children = (
 				FA8394CB27AF076E0094CF29 /* ShowModel.swift */,
 				FAA1771627B47CB600F67974 /* SearchShowModel.swift */,
+				FA978E0227B55CB3003F7B4A /* EpisodeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,14 +256,41 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		FAA176E527B31FA100F67974 /* SeriesList */ = {
+		FA978E0627B5B355003F7B4A /* ShowCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1770227B4274A00F67974 /* ShowCollectionViewCell.swift */,
+				FAA1770327B4274A00F67974 /* ShowCollectionViewCell.xib */,
+			);
+			path = ShowCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA978E0727B5B360003F7B4A /* GenreCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA978E0927B5B383003F7B4A /* GenreCollectionViewCell.swift */,
+				FA978E0A27B5B383003F7B4A /* GenreCollectionViewCell.xib */,
+			);
+			path = GenreCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA978E0827B5B369003F7B4A /* EpisodeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA978E0D27B5B39B003F7B4A /* EpisodeTableViewCell.swift */,
+				FA978E0E27B5B39B003F7B4A /* EpisodeTableViewCell.xib */,
+			);
+			path = EpisodeTableViewCell;
+			sourceTree = "<group>";
+		};
+		FAA176E527B31FA100F67974 /* ShowList */ = {
 			isa = PBXGroup;
 			children = (
 				FAA176E627B31FC100F67974 /* ShowListViewController.swift */,
 				FAA1770627B427A200F67974 /* ShowListViewModel.swift */,
 				FAA176E727B31FC100F67974 /* ShowListViewController.xib */,
 			);
-			path = SeriesList;
+			path = ShowList;
 			sourceTree = "<group>";
 		};
 		FAA176EA27B3203900F67974 /* SearchSeries */ = {
@@ -254,19 +303,21 @@
 			path = SearchSeries;
 			sourceTree = "<group>";
 		};
-		FAA176EF27B3206900F67974 /* SerieDetail */ = {
+		FAA176EF27B3206900F67974 /* ShowDetail */ = {
 			isa = PBXGroup;
 			children = (
 				FAA176F027B3207C00F67974 /* ShowDetailViewController.swift */,
-				FAA176F127B3207C00F67974 /* SerieDetailViewController.xib */,
+				FA978E0427B56302003F7B4A /* ShowDetailViewModel.swift */,
+				FAA176F127B3207C00F67974 /* ShowDetailViewController.xib */,
 			);
-			path = SerieDetail;
+			path = ShowDetail;
 			sourceTree = "<group>";
 		};
 		FAA176F427B3209A00F67974 /* EpisodeDetail */ = {
 			isa = PBXGroup;
 			children = (
 				FAA176F527B320AC00F67974 /* EpisodeDetailViewController.swift */,
+				FA850CB027B6AB02006729EF /* EpisodeDetailViewModel.swift */,
 				FAA176F627B320AC00F67974 /* EpisodeDetailViewController.xib */,
 			);
 			path = EpisodeDetail;
@@ -293,8 +344,9 @@
 		FAA176FD27B4250500F67974 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1770227B4274A00F67974 /* ShowCollectionViewCell.swift */,
-				FAA1770327B4274A00F67974 /* ShowCollectionViewCell.xib */,
+				FA978E0827B5B369003F7B4A /* EpisodeTableViewCell */,
+				FA978E0727B5B360003F7B4A /* GenreCollectionViewCell */,
+				FA978E0627B5B355003F7B4A /* ShowCollectionViewCell */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -303,21 +355,16 @@
 			isa = PBXGroup;
 			children = (
 				FAA1770927B429CC00F67974 /* NavigationBarViewController.swift */,
+				FA850CB227B6DCBF006729EF /* NavigationViewController.swift */,
 			);
 			path = Navigation;
-			sourceTree = "<group>";
-		};
-		FAA1770B27B42AFB00F67974 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FAA1770C27B42B0100F67974 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				FAA1771127B4776B00F67974 /* Extensions */,
+				FA850CAE27B69C9F006729EF /* Colors.xcassets */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -326,6 +373,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA1771227B4778100F67974 /* UIViewControllerExtension.swift */,
+				FA850CA527B691E4006729EF /* StringExtension.swift */,
+				FA850CA727B691FF006729EF /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,11 +489,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8394A627AEDB400094CF29 /* LaunchScreen.storyboard in Resources */,
+				FA978E0C27B5B383003F7B4A /* GenreCollectionViewCell.xib in Resources */,
 				FA8394A327AEDB400094CF29 /* Assets.xcassets in Resources */,
 				FAA1770527B4274A00F67974 /* ShowCollectionViewCell.xib in Resources */,
+				FA978E1027B5B39B003F7B4A /* EpisodeTableViewCell.xib in Resources */,
+				FA850CAF27B69C9F006729EF /* Colors.xcassets in Resources */,
 				FAA176EE27B3204F00F67974 /* SearchShowViewController.xib in Resources */,
 				FAA176F827B320AC00F67974 /* EpisodeDetailViewController.xib in Resources */,
-				FAA176F327B3207C00F67974 /* SerieDetailViewController.xib in Resources */,
+				FAA176F327B3207C00F67974 /* ShowDetailViewController.xib in Resources */,
 				FAA176E927B31FC100F67974 /* ShowListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,19 +625,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA850CB327B6DCBF006729EF /* NavigationViewController.swift in Sources */,
+				FA978E0527B56302003F7B4A /* ShowDetailViewModel.swift in Sources */,
 				FA8394CC27AF076E0094CF29 /* ShowModel.swift in Sources */,
+				FA850CB127B6AB02006729EF /* EpisodeDetailViewModel.swift in Sources */,
 				FAA1771027B43EA400F67974 /* ShowsService.swift in Sources */,
+				FA850CA827B691FF006729EF /* DataExtension.swift in Sources */,
 				FA83949A27AEDB3E0094CF29 /* AppDelegate.swift in Sources */,
 				FAA176ED27B3204F00F67974 /* SearchShowViewController.swift in Sources */,
 				FAA1771527B478A500F67974 /* SearchShowViewModel.swift in Sources */,
 				FAA176F727B320AC00F67974 /* EpisodeDetailViewController.swift in Sources */,
 				FAA1770A27B429CC00F67974 /* NavigationBarViewController.swift in Sources */,
+				FA850CA627B691E4006729EF /* StringExtension.swift in Sources */,
+				FA978E0327B55CB3003F7B4A /* EpisodeModel.swift in Sources */,
 				FAA176FB27B32B6600F67974 /* RequestModel.swift in Sources */,
 				FAA1771727B47CB600F67974 /* SearchShowModel.swift in Sources */,
 				FAA176F227B3207C00F67974 /* ShowDetailViewController.swift in Sources */,
 				FA8394CF27AF0B950094CF29 /* BaseService.swift in Sources */,
+				FA978E0F27B5B39B003F7B4A /* EpisodeTableViewCell.swift in Sources */,
 				FAA1770727B427A200F67974 /* ShowListViewModel.swift in Sources */,
 				FA83949C27AEDB3E0094CF29 /* SceneDelegate.swift in Sources */,
+				FA978E0B27B5B383003F7B4A /* GenreCollectionViewCell.swift in Sources */,
 				FAA176E827B31FC100F67974 /* ShowListViewController.swift in Sources */,
 				FAA1771327B4778100F67974 /* UIViewControllerExtension.swift in Sources */,
 				FAA1770427B4274A00F67974 /* ShowCollectionViewCell.swift in Sources */,

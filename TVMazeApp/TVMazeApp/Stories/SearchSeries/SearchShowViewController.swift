@@ -101,7 +101,11 @@ extension SearchShowViewController: UICollectionViewDelegate, UICollectionViewDa
         return 0
     }
     
-    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let show = viewModel.searchShowList?[indexPath.row].show else {
+            return
+        }
+        let showDetailViewController = ShowDetailViewController.newInstance(viewModel: ShowDetailViewModel(showModel: show))
+        navigationController?.pushViewController(showDetailViewController, animated: true)
     }
 }

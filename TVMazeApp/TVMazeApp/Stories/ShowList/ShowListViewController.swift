@@ -16,6 +16,7 @@ class ShowListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "TVMazeApp"
         bind()
         viewModel.getShows()
         configCollectionView()
@@ -25,6 +26,7 @@ class ShowListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.layer.masksToBounds = false
+        collectionView.allowsMultipleSelection = false
         collectionView.register(UINib(nibName: "ShowCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ShowCollectionViewCell.identifier)
     }
     
@@ -80,5 +82,13 @@ extension ShowListViewController: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumInteritemSpacingForSectionAt _: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let show = viewModel.showList?[indexPath.row] else {
+            return
+        }
+        let showDetailViewController = ShowDetailViewController.newInstance(viewModel: ShowDetailViewModel(showModel: show))
+        navigationController?.pushViewController(showDetailViewController, animated: true)
     }
 }

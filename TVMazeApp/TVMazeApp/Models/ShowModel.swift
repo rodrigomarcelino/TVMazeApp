@@ -22,13 +22,12 @@ struct ShowModel: Codable {
     var officialSite: String?
     var schedule: ScheduleModel?
     var rating: RatingModel?
-    var weight: Int
+    var weight: Int?
     var network: NetworkModel?
     var externals: ExternalsModel?
     var image: ImageModel?
     var summary: String?
     var updated: Int32?
-//    var _links: String?
 }
 
 struct ScheduleModel: Codable {

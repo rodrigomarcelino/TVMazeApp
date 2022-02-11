@@ -20,6 +20,7 @@ public class NavigationBarViewController: UITabBarController, UITabBarController
     private func configureTab() {
         
         let home = ShowListViewController.newInstance(viewModel: ShowListViewModel())
+        
         let homeIcon = UIImage(systemName: "house.fill")
         home.tabBarItem = UITabBarItem(title: "Home", image: homeIcon, tag: 0)
         
@@ -27,6 +28,6 @@ public class NavigationBarViewController: UITabBarController, UITabBarController
         let userIcon = UIImage(systemName: "magnifyingglass")
         search.tabBarItem = UITabBarItem(title: "Search", image: userIcon, tag: 2)
         
-        self.setViewControllers([home, search], animated: false)
+        self.setViewControllers([UINavigationController(rootViewController: home), UINavigationController(rootViewController: search)], animated: false)
     }
 }
