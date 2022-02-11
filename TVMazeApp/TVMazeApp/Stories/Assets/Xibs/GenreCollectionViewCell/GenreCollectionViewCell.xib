@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-jM-BIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <rect key="frame" x="5" y="0.0" width="40" height="50"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" name="TextColor"/>
                         <nil key="highlightedColor"/>
@@ -28,10 +28,10 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" name="SecondaryBackground"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="b2P-jM-BIJ" secondAttribute="trailing" id="1qA-fj-KKq"/>
+                <constraint firstAttribute="trailing" secondItem="b2P-jM-BIJ" secondAttribute="trailing" constant="5" id="1qA-fj-KKq"/>
                 <constraint firstAttribute="bottom" secondItem="b2P-jM-BIJ" secondAttribute="bottom" id="cPn-qy-fCL"/>
                 <constraint firstItem="b2P-jM-BIJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="r7h-SA-Ote"/>
-                <constraint firstItem="b2P-jM-BIJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ubB-yo-3hV"/>
+                <constraint firstItem="b2P-jM-BIJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ubB-yo-3hV"/>
             </constraints>
             <connections>
                 <outlet property="genreLabel" destination="b2P-jM-BIJ" id="AfM-ko-OTV"/>
@@ -41,7 +41,7 @@
     </objects>
     <resources>
         <namedColor name="SecondaryBackground">
-            <color red="0.41176470588235292" green="0.41176470588235292" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87058823529411766" green="0.12941176470588234" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

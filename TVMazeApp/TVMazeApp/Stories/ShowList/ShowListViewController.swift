@@ -18,7 +18,7 @@ class ShowListViewController: UIViewController {
         super.viewDidLoad()
         title = "TVMazeApp"
         bind()
-        viewModel.getShows()
+        viewModel.getShows(page: 0)
         configCollectionView()
     }
     
@@ -69,7 +69,7 @@ extension ShowListViewController: UICollectionViewDelegate, UICollectionViewData
     }
 
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
-        return CGSize(width: (view.frame.size.width/3)-10, height: 150)
+        return CGSize(width: (view.frame.size.width/3)-20, height: 150)
     }
 
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, insetForSectionAt _: Int) -> UIEdgeInsets {
@@ -90,5 +90,15 @@ extension ShowListViewController: UICollectionViewDelegate, UICollectionViewData
         }
         let showDetailViewController = ShowDetailViewController.newInstance(viewModel: ShowDetailViewModel(showModel: show))
         navigationController?.pushViewController(showDetailViewController, animated: true)
+    }
+        
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !(viewModel.showList?.isEmpty ?? true) {
+            let offsetY = scrollView.contentOffset.y
+            let contentHeight = scrollView.contentSize.height
+            if offsetY > contentHeight - scrollView.frame.size.height {
+                self.viewModel.callNewPage()
+            }
+        }
     }
 }

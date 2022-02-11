@@ -15,6 +15,10 @@ class ShowListViewModel: NSObject {
     var showList: [ShowModel]? = []
     
     let showsService: ShowsService!
+    
+    var lastPageCall = 0
+    var hasMorePages = true
+    var hasCalledService = false
 
     struct ViewState {
         let loading = BehaviorRelay<Bool>(value: false)
@@ -25,14 +29,28 @@ class ShowListViewModel: NSObject {
         self.showsService = showsService
     }
     
-    func getShows() {
+    func getShows(page: Int) {
+        hasCalledService = true
         viewState.loading.accept(true)
-        showsService.getShowsPerPage(page: 0).then { [self] result in
+        showsService.getShowsPerPage(page: page).then { [self] result in
+            hasCalledService = false
+            if result.isEmpty {
+                hasMorePages = false
+                return
+            }
             self.showList?.append(contentsOf: result)
             self.viewState.seviceSuccess.accept(())
         }.catch { _ in
+            self.hasCalledService = false
             self.viewState.loading.accept(false)
             //TODO show empty view or error service
+        }
+    }
+    
+    func callNewPage() {
+        if hasMorePages && !hasCalledService {
+            lastPageCall += 1
+            getShows(page: lastPageCall)
         }
     }
     

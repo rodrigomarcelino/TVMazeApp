@@ -18,24 +18,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5z-gm-6MY">
-                        <rect key="frame" x="80" y="0.0" width="220" height="21"/>
+                        <rect key="frame" x="125" y="10" width="175" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" name="TextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upX-LU-K2g">
-                        <rect key="frame" x="80" y="21" width="220" height="67"/>
+                        <rect key="frame" x="125" y="31" width="175" height="57"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" name="TextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="T18-P2-T7L">
-                        <rect key="frame" x="27.5" y="34" width="20" height="20"/>
+                        <rect key="frame" x="50" y="34" width="20" height="20"/>
                     </activityIndicatorView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-No-VLh">
-                        <rect key="frame" x="0.0" y="0.0" width="75" height="88"/>
+                        <rect key="frame" x="0.0" y="6.5" width="120" height="75"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="ltl-Fy-cTP"/>
+                            <constraint firstAttribute="width" constant="120" id="ltl-Fy-cTP"/>
+                            <constraint firstAttribute="height" constant="75" id="pfv-zE-3Tr"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -43,11 +44,10 @@
                 <constraints>
                     <constraint firstItem="upX-LU-K2g" firstAttribute="leading" secondItem="F5z-gm-6MY" secondAttribute="leading" id="67W-DB-4Ud"/>
                     <constraint firstItem="upX-LU-K2g" firstAttribute="top" secondItem="F5z-gm-6MY" secondAttribute="bottom" id="9H2-wP-bOX"/>
-                    <constraint firstAttribute="bottom" secondItem="3ti-No-VLh" secondAttribute="bottom" id="JUt-Xe-jtd"/>
                     <constraint firstItem="F5z-gm-6MY" firstAttribute="leading" secondItem="3ti-No-VLh" secondAttribute="trailing" constant="5" id="JXY-BM-9P7"/>
+                    <constraint firstItem="3ti-No-VLh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Of3-N9-oCo"/>
                     <constraint firstItem="T18-P2-T7L" firstAttribute="centerY" secondItem="3ti-No-VLh" secondAttribute="centerY" id="RvT-Ox-0jL"/>
-                    <constraint firstItem="3ti-No-VLh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TVX-gS-itT"/>
-                    <constraint firstItem="F5z-gm-6MY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="V0F-9R-xBS"/>
+                    <constraint firstItem="F5z-gm-6MY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="V0F-9R-xBS"/>
                     <constraint firstAttribute="bottom" secondItem="upX-LU-K2g" secondAttribute="bottom" id="cMu-AY-1an"/>
                     <constraint firstItem="3ti-No-VLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gP1-vN-rbN"/>
                     <constraint firstAttribute="trailing" secondItem="F5z-gm-6MY" secondAttribute="trailing" constant="20" id="nyF-OP-tAb"/>

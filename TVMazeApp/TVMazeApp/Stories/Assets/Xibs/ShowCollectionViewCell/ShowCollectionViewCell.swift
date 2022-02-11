@@ -21,6 +21,7 @@ class ShowCollectionViewCell: UICollectionViewCell {
     func setUp(name: String?, imageModel: ImageModel?) {
         nameLabel.text = name ?? ""
         setImage(imageModel: imageModel)
+        setCornerRadius()
     }
     
     private func setImage(imageModel: ImageModel?) {
@@ -40,6 +41,11 @@ class ShowCollectionViewCell: UICollectionViewCell {
                 self.posterImageView.image = UIImage(named: "placeHolder")
             }
         })
+    }
+    
+    func setCornerRadius() {
+        layer.cornerRadius = 20
+        layer.masksToBounds = true
     }
     
     override func prepareForReuse() {

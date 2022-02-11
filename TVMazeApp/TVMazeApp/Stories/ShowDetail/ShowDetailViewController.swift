@@ -36,8 +36,6 @@ class ShowDetailViewController: UIViewController {
         setImage()
         scheduleLabel.text = viewModel.schedule()
         summaryLabel.text = viewModel.showModel?.summary?.html2String
-        let tap = UITapGestureRecognizer(target: self, action:  #selector(openSummary))
-        summaryLabel.addGestureRecognizer(tap)
     }
     
     private func setImage() {
@@ -62,6 +60,7 @@ class ShowDetailViewController: UIViewController {
     func configTableView() {
         episodesTableView.dataSource = self
         episodesTableView.delegate = self
+        episodesTableView.tableHeaderView?.backgroundColor = .lightGray
         episodesTableView.register(UINib(nibName: EpisodeTableViewCell.className, bundle: nil), forCellReuseIdentifier: EpisodeTableViewCell.identifier)
     }
     
@@ -87,10 +86,6 @@ class ShowDetailViewController: UIViewController {
                 self.episodesTableView.reloadData()
             })
             .disposed(by: bag)
-    }
-    
-    @objc func openSummary() {
-        print("tap working")
     }
 }
 
@@ -128,9 +123,22 @@ extension ShowDetailViewController: UITableViewDelegate, UITableViewDataSource {
         return viewModel.episodesPerSeason[season]?.count ?? 1
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let season = viewModel.seasonKeys[section]
-        return "Season \(season)"
+        let view = UIView()
+        view.backgroundColor = UIColor(named: "SecondaryBackground")
+        let label = UILabel()
+        label.text = "Season \(season)"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentHuggingPriority(.defaultLow, for: .vertical)
+        view.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10)
+        ])
+        return view
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -151,7 +159,7 @@ extension ShowDetailViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
 }
